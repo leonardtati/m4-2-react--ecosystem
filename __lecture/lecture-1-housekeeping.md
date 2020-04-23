@@ -27,7 +27,7 @@ export default Button;
 ```
 
 ```js
-import Button from '../Button';
+import Button from "../Button";
 ```
 
 ---
@@ -42,7 +42,7 @@ export const logOut = () => { ✂️ };
 ```
 
 ```js
-import { logIn, logOut } from '../../authentication-utils.js';
+import { logIn, logOut } from "../../authentication-utils.js";
 ```
 
 ---
@@ -72,7 +72,7 @@ export default data;
 
 ```js
 // src/index.js
-import theBestData from './data';
+import theBestData from "./data";
 ```
 
 ---
@@ -84,15 +84,15 @@ export const MAGIC_NUMBER = 123;
 
 ```js
 // src/index.js
-import MAGIC_NUMBER from './data';
+import { MAGIC_NUMBER } from "./data";
 ```
 
 ---
 
 ```js
 // src/data.js
-export const users = [];
-export const sessions = [];
+const users = [];
+const sessions = [];
 
 const data = { users, sessions };
 
@@ -101,20 +101,20 @@ export default data;
 
 ```js
 // src/index.js
-import {data, users} from './data';
+import data from "./data";
+data.users;
 ```
 
 ---
 
 ```js
 // src/data.js
-export default const baseball = '⚾️';
-
+export const baseball = "⚾️";
 ```
 
 ```js
 // src/index.js
-import baseball from './data';
+import baseball from "./data";
 ```
 
 ---
